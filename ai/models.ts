@@ -16,4 +16,4 @@ export const models: Array<Model> = [
   }
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'gpt-4o-mini';
+export const DEFAULT_MODEL_NAME: string = 'qwen2.5:72b';

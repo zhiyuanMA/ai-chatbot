@@ -56,6 +56,15 @@ export function AppSidebar({ user }: { user: User | undefined }) {
           <SidebarHistory user={user} />
         </SidebarGroup>
       </SidebarContent>
+      <SidebarFooter>
+      {user && (
+          <SidebarGroup>
+            <SidebarGroupContent>
+              <SidebarUserNav user={user} />
+            </SidebarGroupContent>
+          </SidebarGroup>
+        )}
+      </SidebarFooter>
     </Sidebar>
   );
 }
